@@ -16,6 +16,14 @@ Prerequisites: Windows 10/11, Node.js 20 or newer, Chrome or Edge, and a Douyin 
 
 You should not paste cookies, tokens, `uid`, or `sec_uid` into chat. See [AI_SETUP.md](AI_SETUP.md) for the exact machine-readable flow.
 
+## Connection modes
+
+`START_BRIDGE.cmd` uses a Cloudflare Quick Tunnel by default. It is the easiest Alpha path, but its public URL can change after a restart.
+
+If a tester wants a stable endpoint, a local AI may configure **that tester's own** Tailscale Funnel after the bridge is running. Tell the AI: **“Configure an optional stable Tailscale Funnel endpoint for this MCP.”** The AI must follow [AI_SETUP.md](AI_SETUP.md), discover the installed Tailscale CLI and its current syntax, verify the endpoint, and keep the generated hostname and access token only in ignored `runtime/` files. A hostname, Tailnet name, or access token from another installation must never be copied from documentation or committed to Git.
+
+Stable public access is optional. Local-only access and the default temporary tunnel remain supported. If Tailscale requires the owner to sign in, enable Funnel, or approve a policy change, the AI must pause for the owner instead of bypassing that authorization.
+
 ## Safety boundary
 
 - Structured tools are preferred; screenshots and visual operation are fallback paths.
