@@ -1,0 +1,32 @@
+{
+  "name": "douyin-controlled-mcp-alpha",
+  "version": "0.1.0-alpha.0",
+  "private": true,
+  "description": "GPT-first structured Douyin and Creator Center MCP alpha with verified browser state and confirmation-gated writes.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test:fixtures": "node scripts/run-fixtures.mjs",
+    "test": "npm run typecheck && npm run build && npm run test:fixtures",
+    "start": "node dist/index.js --http --port 31337",
+    "start:stdio": "node dist/index.js --stdio",
+    "test:mcp": "node dist/test-client.js",
+    "benchmark:latency": "node scripts/benchmark-latency.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "express": "5.2.1",
+    "playwright-core": "1.61.1",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/express": "5.0.6",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
+}

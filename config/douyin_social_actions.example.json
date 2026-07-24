@@ -1,0 +1,9 @@
+{
+  "example_safe_action": {
+    "enabled": false,
+    "scope": "current_page",
+    "label": "EXACT_VISIBLE_LABEL",
+    "context_contains": "EXPECTED_VISIBLE_CONTEXT",
+    "action_type": "example"
+  }
+}

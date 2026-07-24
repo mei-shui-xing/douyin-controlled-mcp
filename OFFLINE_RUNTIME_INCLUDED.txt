@@ -1,0 +1,4 @@
+Source package installation note (legacy filename retained for compatibility):
+Node runtime dependencies are not bundled. START_HERE_SETUP.cmd installs the exact package-lock.json dependencies with npm ci and builds the TypeScript source.
+The optional local transcript component is also not bundled because faster-whisper and its model files are large.
+Run INSTALL_TRANSCRIPT.cmd once when you need long-video transcription. It uses local CPU/GPU and no paid transcription API.

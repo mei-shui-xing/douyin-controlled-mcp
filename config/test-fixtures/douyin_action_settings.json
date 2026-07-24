@@ -1,0 +1,19 @@
+{
+  "operator": {
+    "display_name": "FixtureOperator",
+    "uid": "10000000001",
+    "sec_uid": "MS4wLjABAAAA_TEST_OPERATOR_000000000000000000000000"
+  },
+  "rate_limit": {
+    "max_writes_per_minute": 8,
+    "share_cooldown_minutes": 10,
+    "min_delay_ms": 650,
+    "max_delay_ms": 1300
+  },
+  "features": {
+    "public_comment": true,
+    "comment_reply": true,
+    "publish_video": false,
+    "publish_article": true
+  }
+}

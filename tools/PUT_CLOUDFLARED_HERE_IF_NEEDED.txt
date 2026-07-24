@@ -1,0 +1,1 @@
+If automatic detection fails, place cloudflared.exe in this folder and run START_HERE_SETUP.cmd again.

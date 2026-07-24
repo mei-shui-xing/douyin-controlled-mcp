@@ -1,0 +1,11 @@
+{
+  "example_friend": {
+    "display_name": "YOUR_BOUND_ACCOUNT_NAME",
+    "profile_url": "https://www.douyin.com/user/YOUR_SEC_UID",
+    "uid": "YOUR_BOUND_UID",
+    "sec_uid": "YOUR_SEC_UID",
+    "allow_share": false,
+    "allow_message": false,
+    "allow_creator_center": false
+  }
+}

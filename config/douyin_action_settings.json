@@ -1,0 +1,4 @@
+{
+  "deprecated": true,
+  "instructions": "Do not edit this compatibility stub. Follow AI_SETUP.md so the AI detects the signed-in account, asks for permissions, and creates runtime/private-config privately."
+}

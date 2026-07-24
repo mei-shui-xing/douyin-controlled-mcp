@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>抖音图集模板</title>
+  <style>
+    :root {
+      --background: #111827;
+      --surface: rgba(255,255,255,.09);
+      --title: #f9fafb;
+      --body: #e5e7eb;
+      --accent: #67e8f9;
+      --safe-x: 92px;
+      --safe-y: 104px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; background: #05070b; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+    [data-slide] {
+      position: relative;
+      width: 1080px;
+      height: 1440px;
+      overflow: hidden;
+      padding: var(--safe-y) var(--safe-x);
+      color: var(--body);
+      background:
+        radial-gradient(circle at 88% 8%, rgba(103,232,249,.22), transparent 34%),
+        linear-gradient(145deg, #111827 0%, #0f172a 55%, #020617 100%);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 12px 20px;
+      border: 1px solid rgba(103,232,249,.35);
+      border-radius: 999px;
+      color: var(--accent);
+      background: rgba(8,145,178,.11);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .badge img { width: 44px; height: 44px; border-radius: 50%; }
+    h1 {
+      max-width: 840px;
+      margin: 100px 0 50px;
+      color: var(--title);
+      font-size: 78px;
+      line-height: 1.15;
+      letter-spacing: -2px;
+    }
+    .body {
+      max-width: 840px;
+      white-space: pre-line;
+      font-size: 42px;
+      line-height: 1.65;
+    }
+    .quote {
+      margin-top: 58px;
+      padding: 34px 40px;
+      border-left: 8px solid var(--accent);
+      border-radius: 0 24px 24px 0;
+      background: var(--surface);
+      font-size: 36px;
+      line-height: 1.6;
+    }
+    .footer {
+      position: absolute;
+      left: var(--safe-x);
+      right: var(--safe-x);
+      bottom: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(229,231,235,.72);
+      font-size: 28px;
+    }
+    .page { color: var(--accent); font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+  <section data-slide>
+    <div class="badge"><img src="avatar.svg" alt="头像">抖音图集模板</div>
+    <h1>一套可以继续改的<br>中文图集模板 ✨</h1>
+    <div class="body">支持中文、emoji 和换行。
+
+背景、主标题、正文、页码与署名都能直接替换。</div>
+    <div class="footer"><span>署名 / YOUR_NAME</span><span class="page">01 / 03</span></div>
+  </section>
+  <section data-slide>
+    <div class="badge"><img src="avatar.svg" alt="头像">统一安全边距</div>
+    <h1>内容保持在<br>舒适阅读区域</h1>
+    <div class="body">默认画布：1080 × 1440
+左右边距：92px
+上下边距：104px</div>
+    <div class="quote">HTML 渲染与抖音上传互相独立，生成图片不会触发发布。</div>
+    <div class="footer"><span>可选署名</span><span class="page">02 / 03</span></div>
+  </section>
+  <section data-slide>
+    <div class="badge"><img src="avatar.svg" alt="头像">自由组合</div>
+    <h1>改 HTML，<br>再重新渲染</h1>
+    <div class="body">每个 data-slide 元素都会按顺序输出：
+
+slide_01.png
+slide_02.png
+slide_03.png</div>
+    <div class="footer"><span>角标与头像均可删除</span><span class="page">03 / 03</span></div>
+  </section>
+</body>
+</html>

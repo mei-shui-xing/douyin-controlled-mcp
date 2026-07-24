@@ -1,0 +1,20 @@
+{
+  "operator": {
+    "alias": "operator",
+    "display_name": "YOUR_DISPLAY_NAME",
+    "uid": "YOUR_UID",
+    "sec_uid": "YOUR_SEC_UID"
+  },
+  "rate_limit": {
+    "max_writes_per_minute": 4,
+    "share_cooldown_minutes": 10,
+    "min_delay_ms": 900,
+    "max_delay_ms": 1600
+  },
+  "features": {
+    "public_comment": false,
+    "comment_reply": false,
+    "publish_video": false,
+    "publish_article": false
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "accept_fixture_streak": {
+    "enabled": true,
+    "scope": "bound_message",
+    "alias": "bound_user",
+    "label": "FIXTURE_ACCEPT",
+    "context_contains": "FIXTURE_CONTEXT",
+    "completed_context_contains": "FIXTURE_DONE",
+    "action_type": "streak"
+  }
+}

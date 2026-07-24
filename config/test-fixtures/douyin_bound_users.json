@@ -1,0 +1,11 @@
+{
+  "bound_user": {
+    "display_name": "FixtureBoundUser",
+    "profile_url": "https://www.douyin.com/user/MS4wLjABAAAA_TEST_BOUND_USER_0000000000000000000000",
+    "uid": "10000000002",
+    "sec_uid": "MS4wLjABAAAA_TEST_BOUND_USER_0000000000000000000000",
+    "allow_share": true,
+    "allow_message": true,
+    "allow_creator_center": true
+  }
+}
