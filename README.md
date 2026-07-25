@@ -49,3 +49,7 @@ The application code is licensed under MIT; see [LICENSE](LICENSE). Dependency a
 Public release must use a fresh sanitized snapshot, not this private repository's historical Git objects. See [SECURITY.md](SECURITY.md) before packaging.
 
 Known limitations and deferred architecture are tracked in [KNOWN_ISSUES.md](KNOWN_ISSUES.md) and [ROADMAP.md](ROADMAP.md).
+
+## Related projects
+
+For the unified entry point to the Douyin, Windows PC, and Android phone MCP projects, see [mcp-tools-link-hub](https://github.com/mei-shui-xing/mcp-tools-link-hub).
